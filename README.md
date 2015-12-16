@@ -1,22 +1,22 @@
-# go-strcut-filler
+# go-struct-filler
 
 ## Overview
 
 * Convert a struct to another same type struct
-* Fill the same name if the struct is anonymous
-* Convert map to struct
+* Fill the same names if the struct is anonymous
+* Convert a map to struct
 
 # Getting Started
 
 ## Installation
 
 ```
-go get -u github.com/WindomZ/go-strcut-filler
+go get -u github.com/WindomZ/go-struct-filler
 ```
 
 ## Documentation 
 
-Please refer to the *_test.go files.
+Please go test and refer to the *_test.go files.
 
 ## TODO
 * fix bugs
