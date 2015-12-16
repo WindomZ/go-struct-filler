@@ -22,10 +22,12 @@ func TestMapStruct(t *testing.T) {
 	m["F3"] = time.Now()
 	m["F4"] = 4
 	m["F5"] = time.Now()
-	var x XXXYYYZZZ
-	err := MapStruct(m, &x)
+	var xyx XXXYYYZZZ
+	logStruct(t, "Reference", m)
+	logStruct(t, "Before", xyx)
+	err := MapStruct(m, &xyx)
 	if err != nil {
 		t.Error(err)
 	}
-	t.Log(x)
+	logStruct(t, "After", xyx)
 }

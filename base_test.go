@@ -1,6 +1,8 @@
 package gsf
 
 import (
+	"bytes"
+	"testing"
 	"time"
 )
 
@@ -23,4 +25,26 @@ type YYY struct {
 type ZZZ struct {
 	XXX
 	YYY
+}
+
+func logStruct(t *testing.T, title string, s interface{}) {
+	l := int((50 - len(title)) / 2)
+	if l < 5 {
+		l = 5
+	}
+	var b bytes.Buffer
+	for i := 0; i < l; i++ {
+		b.WriteByte('-')
+	}
+	tmp := b.String()
+	b.WriteString(title)
+	b.WriteString(tmp)
+	t.Log(b.String())
+	t.Logf("%#v", s)
+	b.Reset()
+	len := l*2 + len(title)
+	for i := 0; i < len; i++ {
+		b.WriteByte('-')
+	}
+	t.Log(b.String())
 }

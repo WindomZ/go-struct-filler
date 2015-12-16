@@ -25,4 +25,4 @@ Please refer to the *_test.go files.
 
 ## LICENSE
 
-(http://opensource.org/licenses/mit-license.php)
+MIT(http://opensource.org/licenses/mit-license.php)
