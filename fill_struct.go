@@ -23,6 +23,9 @@ func FillStruct(dest interface{}) error {
 			if strings.EqualFold(tv1.Type.Name, tv2.Type.Name) {
 				v1 := tv1.Value
 				v2 := tv2.Value
+				if v1 == v2 {
+					continue
+				}
 				switch v1.Kind() {
 				case reflect.Bool:
 					if v1.Bool() {
