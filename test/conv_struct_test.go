@@ -1,6 +1,7 @@
 package gsf
 
 import (
+	. "github.com/WindomZ/go-struct-filler"
 	"testing"
 	"time"
 )

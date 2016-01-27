@@ -1,6 +1,7 @@
 package gsf
 
 import (
+	. "github.com/WindomZ/go-struct-filler"
 	"testing"
 	"time"
 )
@@ -25,7 +26,7 @@ func TestMapStruct(t *testing.T) {
 	var xyx XXXYYYZZZ
 	logStruct(t, "Reference", m)
 	logStruct(t, "Before", xyx)
-	err := MapStruct(m, &xyx)
+	err := MapToStruct(m, &xyx)
 	if err != nil {
 		t.Error(err)
 	}

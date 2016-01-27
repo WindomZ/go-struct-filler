@@ -8,6 +8,10 @@ import (
 )
 
 func MapStruct(m map[string]interface{}, dst interface{}) error {
+	return MapToStruct(m, dst)
+}
+
+func MapToStruct(m map[string]interface{}, dst interface{}) error {
 	for k, v := range m {
 		err := setField(v, dst, k)
 		if err != nil {
