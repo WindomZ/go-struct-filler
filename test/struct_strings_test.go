@@ -6,6 +6,8 @@ import (
 	"time"
 )
 
+// go test -v base_test.go struct_strings_test.go
+
 func TestStructToStringSlice(t *testing.T) {
 	x := XXX{F0: "F0", F1: "F1", F2: 2, F3: time.Now(), F5: time.Now()}
 	logStruct(t, "Before", x)
