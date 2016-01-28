@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func StructToStringArray(src interface{}) (result []string, err error) {
+func StructToStringSlice(src interface{}) (result []string, err error) {
 	v, err := valueOf(src)
 	if err != nil {
 		return
