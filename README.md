@@ -21,7 +21,6 @@ Please go test and refer to the *_test.go files.
 
 ## TODO
 
-* fix bugs
 * Support for more types
 * Provide better extension
 
