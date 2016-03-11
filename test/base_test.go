@@ -1,4 +1,4 @@
-package gsf
+package gsf_test
 
 import (
 	"bytes"
@@ -7,11 +7,12 @@ import (
 )
 
 type XXX struct {
-	F0 string    `json:"f0"`
-	F1 string    `json:"f1"`
-	F2 int       `json:"f2"`
-	F3 time.Time `json:"f3"`
-	F5 time.Time `json:"f5"`
+	F0  string    `json:"f0"`
+	F1  string    `json:"f1"`
+	F2  int       `json:"f2"`
+	F3  time.Time `json:"f3"`
+	F5  time.Time `json:"f5"`
+	F10 []string  `json:"f10"`
 }
 
 type YYY struct {
@@ -19,7 +20,8 @@ type YYY struct {
 	F1 string
 	F2 int
 	XXX
-	F5 time.Time
+	F5  time.Time
+	F10 []string
 }
 
 type ZZZ struct {

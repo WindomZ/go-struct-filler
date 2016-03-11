@@ -1,4 +1,4 @@
-package gsf
+package gsf_test
 
 import (
 	. "github.com/WindomZ/go-struct-filler"
