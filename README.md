@@ -5,9 +5,7 @@
 * Convert a struct to another same type struct
 * Fill the same names if the struct is anonymous
 * Convert a map to struct
-* Convert a struct to slice or map
-
-# Getting Started
+* Convert a struct to slice or ma
 
 ## Installation
 
