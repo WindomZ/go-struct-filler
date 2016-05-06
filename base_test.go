@@ -1,4 +1,4 @@
-package gsf_test
+package gsf
 
 import (
 	"bytes"
@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-type XXX struct {
+type testXXX struct {
 	F0  string    `json:"f0"`
 	F1  string    `json:"f1"`
 	F2  int       `json:"f2"`
@@ -15,18 +15,18 @@ type XXX struct {
 	F10 []string  `json:"f10"`
 }
 
-type YYY struct {
+type testYYY struct {
 	F0 int
 	F1 string
 	F2 int
-	XXX
+	testXXX
 	F5  time.Time
 	F10 []string
 }
 
-type ZZZ struct {
-	XXX
-	YYY
+type testZZZ struct {
+	testXXX
+	testYYY
 }
 
 func logStruct(t *testing.T, title string, s interface{}) {

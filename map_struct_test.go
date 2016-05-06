@@ -1,14 +1,13 @@
-package gsf_test
+package gsf
 
 import (
-	. "github.com/WindomZ/go-struct-filler"
 	"testing"
 	"time"
 )
 
 // go test -v base_test.go map_struct_test.go
 
-type XXXYYYZZZ struct {
+type testXXXYYYZZZ struct {
 	F0 string    `json:"f0"`
 	F1 string    `json:"f1"`
 	F2 int64     `json:"f2"`
@@ -25,7 +24,7 @@ func TestMapStruct(t *testing.T) {
 	m["F3"] = time.Now()
 	m["F4"] = 4
 	m["F5"] = time.Now()
-	var xyx XXXYYYZZZ
+	var xyx testXXXYYYZZZ
 	logStruct(t, "Reference", m)
 	logStruct(t, "Before", xyx)
 	err := MapToStruct(m, &xyx)
