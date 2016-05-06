@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-// go test -v base_test.go map_struct_test.go
+// go test -v -test.run map_struct_test.go
 
 type testXXXYYYZZZ struct {
 	F0 string    `json:"f0"`
