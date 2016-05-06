@@ -47,14 +47,14 @@ func ConvertStruct(src, dest interface{}) error {
 
 func mustPtr(s interface{}) error {
 	if s == nil {
-		return errors.New(fmt.Sprintf("Must not be nil"))
+		return errors.New("gsf: cannot copy nil pointer")
 	}
 	v := reflect.ValueOf(s)
 	if v.Kind() != reflect.Ptr {
-		return errors.New(fmt.Sprintf("%v must be reflect.Ptr", v.Type().Name()))
+		return errors.New(fmt.Sprintf("gsf: %v must be reflect.Ptr", v.Type().Name()))
 	}
 	if v.IsNil() {
-		return errors.New(fmt.Sprintf("Must not be nil"))
+		return errors.New("gsf: cannot copy nil pointer")
 	}
 	return nil
 }

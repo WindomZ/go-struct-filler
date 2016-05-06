@@ -31,10 +31,10 @@ func setField(src interface{}, dest interface{}, name string) error {
 				return setField(src, dest, f.Name)
 			}
 		}
-		return fmt.Errorf("No such field: %s in obj", name)
+		return fmt.Errorf("gsf: No such field: %s in obj", name)
 	}
 	if !fv.CanSet() {
-		return fmt.Errorf("Cannot set %s field value", name)
+		return fmt.Errorf("gsf: Cannot set %s field value", name)
 	}
 	val := reflect.ValueOf(src)
 	if fv.Kind() != val.Kind() {
@@ -52,7 +52,7 @@ func setField(src interface{}, dest interface{}, name string) error {
 				return nil
 			}
 		}
-		return errors.New("Provided value type didn't match obj field type")
+		return errors.New("gsf: Provided value type didn't match obj field type")
 	} else {
 		fv.Set(val)
 	}
