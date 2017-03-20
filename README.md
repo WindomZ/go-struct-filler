@@ -4,6 +4,11 @@
 
 Convert or fill a struct for Go
 
+![v0.3.3](https://img.shields.io/badge/version-v0.3.3-orange.svg)
+![status](https://img.shields.io/badge/status-beta-yellow.svg)
+
+The exported functions could change at any time before the first stable release(>=1.0.0).
+
 ## Overview
 
 - [x] Convert a struct to another same type struct
