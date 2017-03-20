@@ -1,21 +1,18 @@
 # go-struct-filler
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Overview
 
-* Convert a struct to another same type struct
-* Fill the same names if the struct is anonymous
-* Convert a map to struct
-* Convert a struct to slice or map
+-[x] Convert a struct to another same type struct
+-[x] Fill the same names if the struct is anonymous
+-[x] Convert a map to struct
+-[x] Convert a struct to slice or map
 
 ## Installation
 
 ```
 go get -u github.com/WindomZ/go-struct-filler
 ```
-
-## Documentation 
-
-Please go test and refer to the *_test.go files.
 
 ## TODO
 
@@ -24,4 +21,5 @@ Please go test and refer to the *_test.go files.
 
 ## LICENSE
 
-MIT(http://opensource.org/licenses/mit-license.php)
+[MIT](https://github.com/WindomZ/go-struct-filler/blob/master/LICENSE)
+(http://opensource.org/licenses/mit-license.php)
