@@ -1,4 +1,5 @@
 # go-struct-filler
+[![Build Status](https://travis-ci.org/WindomZ/go-struct-filler.svg?branch=master)](https://travis-ci.org/WindomZ/go-struct-filler)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ## Overview
